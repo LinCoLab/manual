@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "LinCoLab Manual"
+  favicon: assets/logo_transparent.png
+  #author: "Jane Doe"
+  date: "1/20/2023"
+  chapters:
+    - index.qmd
+    - lincolab.qmd
+    - the_space.qmd
+    - the_vspace.qmd
+    - membership.qmd
+    - authorship.qmd
+  sidebar: 
+    style: docked
+    logo: assets/logo_transparent.png
+
+
+format:
+  html:
+    theme: cosmo
+
+editor: visual
+

@@ -1,0 +1,74 @@
+# The Physical Space
+
+## Where
+
+The Linguistics Computation Lab (LinCoLab) is located in the basement of [Breckenridge Hall](https://efacts.uky.edu/Details?id=breckinridge_hall), room 10.
+
+```{r}
+#| echo: false
+
+library(leaflet)
+leaflet(
+  height = 50,
+  width = 100,
+  #options = leafletOptions(maxZoom = 30)
+) |> 
+  addTiles() |> 
+  addMarkers(lat = 38.03513, lng = -84.50511, popup = "The LinCoLab") |> 
+  addMarkers(lat = 38.03859, lng = -84.5043, popup = "The Linguistics Department")
+```
+
+## Access
+
+The exterior doors of Breckenridge Hall are key-locked. Outside of normal business hours, they may be locked. Only the director and the Linguistics Department manager have keys to the exterior doors.
+
+The interior door to the lab is also key-locked. There are a limited number of keys that can be signed out by members from the Linguistics Department manager.
+
+**The last person to leave the lab is responsible for locking it!**
+
+## Taking Care of the Space
+
+### Food and drink
+
+It is ok to bring food or drink to the lab, but you must pack out whatever you pack in. We can't throw away food waste inside the lab. We also can't *store* food in the lab.
+
+**Please try to clean up any spills as soon as they happen.**
+
+### The whiteboards
+
+It is ok to write on the whiteboards, but anything written on them *might* be erased at any time.
+
+### Decorations
+
+Please consult with the lab director before adding or subtracting any lab decorations.
+
+### Windows
+
+It is ok to open the windows while you are in the lab.
+
+**If you are the last person to leave the lab, you must close and lock them.**
+
+### Desks, and chairs
+
+All space in the lab is common space.
+
+## Facilities
+
+Directly across the hall from the lab entrance is an all gender bathroom.
+
+## What's around
+
+The closest place to get a cup of coffee and snack is Einstein Bagels in the Chemistry-Physics building. After that is the Starbucks in the William T Young Library.
+
+```{r}
+#| echo: false
+leaflet(
+  height = 60,
+  width = 100,
+  #options = leafletOptions(maxZoom = 30)
+) |> 
+  addTiles() |> 
+  addMarkers(lat = 38.03513, lng = -84.50511, popup = "The LinCoLab") |> 
+  addMarkers(lat =38.03518, lng= -84.50416, popup = "Einstein Bagels") |> 
+  addMarkers(lat = 38.03259, lng = -84.50135, popup = "Starbucks")
+```
